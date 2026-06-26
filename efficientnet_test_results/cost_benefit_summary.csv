@@ -1,0 +1,2 @@
+﻿Model,Cost_Test_Total_Call_Time_s,Cost_Test_Single_Call_Time_s,Cost_Model_Size_Byte,Cost_Model_Size_KB,Cost_Model_Size_MB,Cost_Total_Params,Cost_Trainable_Params,Benefit_Test_MAE,Benefit_Test_MSE,Benefit_Test_RMSE,Benefit_Test_CVRMSE,Benefit_Test_R2,Benefit_ACC30,Benefit_ACC20,Benefit_ACC10,Benefit_MAPE
+MultimodalEfficientNet,5.09393,0.0009856676,53006587.0,51764.2451,50.551021,4373885,4373885,43.889698,3820.592529,61.810942,35.15469,0.494356,66.718266,48.877709,26.25774,31.055325
