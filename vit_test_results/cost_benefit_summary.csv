@@ -1,0 +1,2 @@
+﻿Model,Cost_Test_Total_Call_Time_s,Cost_Test_Single_Call_Time_s,Cost_Model_Size_Byte,Cost_Model_Size_KB,Cost_Model_Size_MB,Cost_Total_Params,Cost_Trainable_Params,Benefit_Test_MAE,Benefit_Test_MSE,Benefit_Test_RMSE,Benefit_Test_CVRMSE,Benefit_Test_R2,Benefit_ACC30,Benefit_ACC20,Benefit_ACC10,Benefit_MAPE
+MultimodalViT,3.61552,0.0006995975,1034586397.0,1010338.2783,986.658475,86197377,86197377,43.971745,3913.033203,62.554242,35.577439,0.482122,66.25387,49.361455,26.857585,30.747202
