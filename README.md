@@ -96,21 +96,7 @@ image_path, feature_1, feature_2, ..., feature_9, target
 
 The first column stores the floor-plan image path. The following nine columns store tabular energy-efficiency variables. The last column stores the regression target.
 
-The project follows the original feature setting and uses the following nine tabular variables before feature filtering:
-
-```text
-NUMBER_HEATED_ROOMS
-CURRENT_ENERGY_EFFICIENCY
-HOT_WATER_ENERGY_EFF
-ROOF_ENERGY_EFF
-WALLS_ENERGY_EFF
-WINDOWS_ENERGY_EFF
-LIGHTING_ENERGY_EFF
-FLOOR_HEIGHT
-MAINHEAT_ENERGY_EFF
-```
-
-Following the original training logic, the second tabular variable, `CURRENT_ENERGY_EFFICIENCY`, is removed before model input. Therefore, the final model input contains one image-derived convolutional feature and eight tabular features:
+Tthe final model input contains one image-derived convolutional feature and eight tabular features:
 
 ```text
 Conv
@@ -273,24 +259,7 @@ The convolutional response maps are extracted through `SimpleCNNGAP9.extract_con
 
 ---
 
-## 9. Main Improvements over the Original Scripts
-
-This project improves the original scripts in the following ways:
-
-1. Removes unused model variants, including `SimpleCNNGAP7`, `SimpleCNNGAP8`, and `SimpleCNNGAP10`.
-2. Removes unused dataset and loss definitions, including `CVRMSELoss`, `RegressionTaskData`, `ImageTabularTaskRateData`, and `ImageTabularTaskDataEP`.
-3. Removes repeated imports, unused variables, and redundant logic.
-4. Separates model definition, data loading, training, explanation, and visualization into independent modules.
-5. Fixes the division-by-zero issue when `torch.cuda.device_count() == 0` on CPU-only machines.
-6. Standardizes the `SimpleCNNGAP9.forward()` input interface so that training, inference, and explanation remain consistent.
-7. Applies the same tabular feature filtering rule across training and SHAP explanation.
-8. Names the image-derived feature as `Conv` in SHAP analysis and explains it together with the eight tabular features.
-9. Integrates convolutional response map extraction into `SimpleCNNGAP9.extract_conv_maps()` to avoid inconsistent model definitions.
-10. Standardizes checkpoint paths, output paths, training logs, and interpretation results.
-
----
-
-## 10. Troubleshooting
+## 9. Troubleshooting
 
 If `shap` is missing, install it with:
 
