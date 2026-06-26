@@ -1,0 +1,2 @@
+﻿Model,Cost_Test_Total_Call_Time_s,Cost_Test_Single_Call_Time_s,Cost_Model_Size_Byte,Cost_Model_Size_KB,Cost_Model_Size_MB,Cost_Total_Params,Cost_Trainable_Params,Benefit_Test_MAE,Benefit_Test_MSE,Benefit_Test_RMSE,Benefit_Test_CVRMSE,Benefit_Test_R2,Benefit_ACC30,Benefit_ACC20,Benefit_ACC10,Benefit_MAPE
+SimpleCNNMLP,2.523001,0.0007491097,1473989.0,1439.4424,1.405705,118193,118193,75.670815,9084.31543,95.311675,43.146932,-0.52714,45.011876,29.572447,14.014252,32.345882
