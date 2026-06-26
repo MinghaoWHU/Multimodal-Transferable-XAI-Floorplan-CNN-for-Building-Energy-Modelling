@@ -1,4 +1,4 @@
-# SimpleCNNGAP9 Project
+# Multimodal Transferable XAI Floorplan-CNN for Building Energy Modelling
 
 A clean and reusable PyTorch implementation of **SimpleCNNGAP9** for floor-plan-based building energy prediction. The project reorganizes the original research scripts into a structured deep learning workflow, including model definition, dataset loading, training, SHAP-based model explanation, and convolutional response map visualization.
 
